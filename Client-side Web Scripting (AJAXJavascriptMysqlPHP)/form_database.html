@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Combining Form Validation and Ajax Engine</title>
+<meta charset="UTF-8">
+<script language="javascript" src="datavalidation.js"></script>
+
+<style>
+table, th, td {
+   border: 1px solid black;
+} 
+</style>
+</head>
+
+<body>
+<a href="index.html">Home</a><br>
+<br>
+<table>
+<form method="post" id="myform" action="javascript:getData()">
+<tr>
+<td><b>First Name:</b> <input type="text" name="fname" id="fname"><br />
+<b>Last Name:</b> <input type="text" name="lname" id="lname"><br />
+<b>E-mail:</b> <input type="text" name="email" id="email"></td>
+
+<td colspan="3"><b>Birthday: Month:</b><select name="month" id="month">
+<option value=""></option>
+<option value="01">01</option>
+<option value="02">02</option>
+<option value="03">03</option>
+<option value="04">04</option>
+<option value="05">05</option>
+<option value="06">06</option>
+<option value="07">07</option>
+<option value="08">08</option>
+<option value="09">09</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+</select>
+<b>Day:</b> <select name="day" id="day">
+<option value=""></option>
+<option value="01">01</option>
+<option value="02">02</option>
+<option value="03">03</option>
+<option value="04">04</option>
+<option value="05">05</option>
+<option value="06">06</option>
+<option value="07">07</option>
+<option value="08">08</option>
+<option value="09">09</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+</select></
+<b>Year:</b> <input type="text" name="year" id="year"><br />
+<b>Subject:</b> <input type="text" name="subject" id="subject"></td>
+</tr>
+
+<tr>
+<td id="bkc"><b>Pick a background color:</b><br/>
+<input type="radio" name="bkcolor" class="bkcolor" value="#ff0000"><label id="bkcolor1">Red</label><br>
+<input type="radio" name="bkcolor" class="bkcolor" value="#0000ff"><label id="bkcolor2">Blue</label><br>
+<input type="radio" name="bkcolor" class="bkcolor" value="#008000"><label id="bkcolor3">Green</label><br>
+<input type="radio" name="bkcolor" class="bkcolor" value="#000000"><label id="bkcolor4">Black</label><br>
+<input type="radio" name="bkcolor" class="bkcolor" value="#800080"><label id="bkcolor5">Purple</label><br>
+<input type="radio" name="bkcolor" class="bkcolor" value="#008b8b"><label id="bkcolor6">Dark Cyan</label><br>
+<input type="radio" name="bkcolor" class="bkcolor" value="#708090"><label id="bkcolor7">Slate Gray</label><br>
+<input type="radio" name="bkcolor" class="bkcolor" value="#4b0082"><label id="bkcolor8">Indigo</label><br>
+</td>
+<td id="txc"><b>Pick a text color:</b><br/>
+<input type="radio" name="txcolor" class="txcolor" value="#ffffff"><label id="txcolor1">White</label><br>
+<input type="radio" name="txcolor" class="txcolor" value="#f0e68c"><label id="txcolor2">Khaki</label><br>
+<input type="radio" name="txcolor" class="txcolor" value="#ffd700"><label id="txcolor3">Gold</label><br>
+<input type="radio" name="txcolor" class="txcolor" value="#ffc0cb"><label id="txcolor4">Pink</label><br>
+<input type="radio" name="txcolor" class="txcolor" value="#ffdab9"><label id="txcolor5">Peach Puff</label><br>
+<input type="radio" name="txcolor" class="txcolor" value="#B4D8E7"><label id="txcolor6">Powder Blue</label><br>
+</td>
+<td colspan="2"><b>Blog</b><br /><textarea name="blog" id="blog" rows="10" cols="35"></textarea></td>
+</tr>
+
+<tr>
+<td><input type="submit" name="senddata" id="senddata" value="Submit"></td>
+<td>&nbsp;</td>
+<td><input type="reset"></td>
+</tr>
+
+</form>
+</table>
+<br>
+<div id="bodycontent"></div>
+
+</body>
+</html>

@@ -1,0 +1,142 @@
+*{
+font-size:18px;
+font-family: "Times New Roman", Times, serif;
+}
+
+table, th, td {
+   border: 1px solid black;
+} 
+
+input,textarea
+{
+background-color:khaki;
+font-family: Verdana;
+font-size: 12px;
+}
+
+/*Background Color*/
+#bkcolor1
+{
+color:#ffffff;
+background-color: #ff0000;
+}
+
+#bkcolor2
+{
+color:#ffffff;
+background-color: #0000ff;
+}
+
+#bkcolor3
+{
+color:#ffffff;
+background-color: #008000;
+}
+
+#bkcolor4
+{
+color:#ffffff;
+background-color: #000000;
+}
+
+#bkcolor5
+{
+color:#ffffff;
+background-color: #800080;
+}
+
+#bkcolor6
+{
+color:#ffffff;
+background-color: #008b8b;
+}
+
+#bkcolor7
+{
+color:#ffffff;
+background-color: #708090;
+}
+
+#bkcolor8
+{
+color:#ffffff;
+background-color: #4b0082;
+}
+
+/*Text Color*/
+#txcolor1
+{
+color:#ffffff;
+background-color: #000000;
+}
+
+#txcolor2
+{
+color:#f0e68c;
+background-color: #000000;
+}
+
+#txcolor3
+{
+color:#ffd700;
+background-color: #000000;
+}
+
+#txcolor4
+{
+color:#ffc0cb;
+background-color: #000000;
+}
+
+#txcolor5
+{
+color:#ffdab9;
+background-color: #000000;
+}
+
+#txcolor6
+{
+color:#B4D8E7;
+background-color: #000000;
+}
+
+/*Posted Content*/
+#bodycontent 
+{
+    width: 800px;
+}
+
+.message
+{
+padding: 10px; 
+border: 2px solid;
+border-radius: 25px;
+margin-bottom:10px;
+}
+
+.rowone
+{
+border-bottom: 2px solid;
+font-style: italic;
+font-family: "Times New Roman", Georgia, Serif;
+}
+.subject
+{
+padding-left: 35px;
+}
+
+.info
+{
+font-family: "Times New Roman", Georgia, Serif;
+width:220px;
+}
+
+.blog
+{
+border: 3px dotted;
+word-wrap: break-word;
+position:relative;
+left:220px;
+bottom: 80px;
+width:500px;
+}

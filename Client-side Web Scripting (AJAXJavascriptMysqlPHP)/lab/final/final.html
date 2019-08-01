@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head><title>Final Project</title>
+
+<script language="Javascript"  src="final.js" ></script>
+
+</head>
+<body>
+  <a href="..//index.html">Home</a><br>  
+   <a href="..//form_engine.html">Reload Page</a><br><br>
+  <form method="post" id="myform" action="javascript:getData()">
+
+<table border="1">
+
+<tr>
+	<td>  <label><em>First Name : </em><input type="text" id="fname" name="fname" ></label></td>
+	<td> <label><em>Last Name : </em><input type="text" id="lname" name="lname" ></label></td>
+	<td><label><em>Email : </em><input type="text" id="email" name="email" ></label></td>
+</tr>
+<tr> 
+  <td>  <label><em>Date of Birth: Month</em>
+ 	<select name="month" id="month" >
+	<option value="">Month</option>        
+	<option value="01">January</option>
+	<option value="02">Febuary</option>
+        <option value="03">March</option>
+	<option value="04">April</option>
+        <option value="05">May</option>
+	<option value="06">June</option>
+        <option value="07">July</option>
+	<option value="08">August</option>
+        <option value="09">September</option>
+	<option value="10">October</option>
+        <option value="11">November</option>
+	<option value="12">December</option>
+	</select></label>
+  </td>
+  <td>  <label><em>Day</em>
+ 	<select name="day" id="day">
+	<option value="">Day</option>
+        <option value="01">1</option>
+	<option value="02">2</option>
+        <option value="03">3</option>
+	<option value="04">4</option>
+        <option value="05">5</option>
+	<option value="06">6</option>
+        <option value="07">7</option>
+	<option value="08">8</option>
+        <option value="09">9</option>
+	<option value="10">10</option>
+        <option value="11">11</option>
+	<option value="12">12</option>
+        <option value="13">13</option>
+	<option value="14">14</option>
+        <option value="15">15</option>
+	<option value="16">16</option>
+        <option value="17">17</option>
+	<option value="18">18</option>
+        <option value="19">19</option>
+	<option value="20">20</option>
+        <option value="21">21</option>
+	<option value="22">22</option>
+        <option value="23">23</option>
+	<option value="24">24</option>
+        <option value="25">25</option>
+	<option value="26">26</option>
+        <option value="27">27</option>
+	<option value="28">28</option>
+        <option value="29">29</option>
+	<option value="30">30</option>
+        <option value="31">31</option>
+	</select></label>
+  </td>
+  <td>  <label><em>Year</em>
+	<input type="text" id="year" name="year" ></label>
+  </td>
+</tr> 
+    
+<tr>
+  <td ><label id="bklabel"><em>Background Color </em></label>
+	<label style="color: #000099;"><input type="radio" name="bkcolor" class="bkcolor" value="#000099">Blue</label>
+	<label style="color: #006600;"><input type="radio" name="bkcolor" class="bkcolor" value="#006600">Green</label>
+	<label style="color: #3D007A;"><input type="radio" name="bkcolor" class="bkcolor" value="#3D007A">Purple</label>
+	<label style="color: #520029;"><input type="radio" name="bkcolor" class="bkcolor" value="#520029">Redish</label>
+  </td>
+
+  
+  <td ><label id="txlabel"><em>Text Color </em></label>
+	<label style="color: #FFd700;"><input type="radio" name="txcolor" class="txcolor" value="#FFd700">Gold</label>
+	<label style="color: #FF3399;"><input type="radio" name="txcolor" class="txcolor" value="#FF3399">Pink</label>
+	<label style="color: #66FFCC;"><input type="radio" name="txcolor" class="txcolor" value="#66FFCC">Aqua</label>
+	<label style="color: #00FF00;"><input type="radio" name="txcolor" class="txcolor" value="#00FF00">Lime</label>
+  </td>
+  
+  <td><label><em>Subject : </em><input type="text" id="subject" name="subject" ></label>
+  </td>
+  
+</tr>
+   
+<tr>
+  <td colspan="2">
+<label><em>Blog</em></label>
+<textarea name="blog" id="blog" style="width: 470px; height: 200px;" ></textarea> 
+  </td>
+  <td id="mess"><h4>Show Message </h4>
+	<div id="showmessage"> Post Place </div>
+  </td>
+</tr>    
+   
+<tr>
+  <td>
+  <label><input type="submit" name="senddata"></label>
+  </td>
+  <td>
+  <a href="#" id="gen">Generate Data</a>
+  </td>
+  <td>
+  <label><input type="reset"></label>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="3">
+      <div id="myresponse">response here</div>
+  </td>
+</tr>
+ 
+</table>
+</form>
+
+<canvas id="mycanvas" width="230" height="700"></canvas>	
+
+
+</body>
+</html>
+
+
+
+

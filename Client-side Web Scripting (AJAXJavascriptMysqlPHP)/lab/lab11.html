@@ -1,0 +1,66 @@
+<html>
+<head>
+<title>My form</title>
+<meta charset='UTF-8'>
+<style>
+label {display: block;}
+td, th {vertical-align: top;}
+textarea {width: 100%; height: 100px;}
+#subject {width: 100%;}
+input, textarea, select {background-color: khaki;}
+</style>
+
+<script src='generateLab.js' language="Javascript"></script>
+</head>
+
+<body>
+
+	<a href="#" id="gen">Generate Data</a>
+<form  method="post" id="myform" action="" >
+<label id="fnameMsg">First Name:</label> <input type="text" id="fname" name="fname">
+<label id="lnameMsg">Last Name:</label> <input type="text" name="lname" id="lname" >
+	
+
+<label id="monthMsg">Month:</label>
+	<select name="month" id="month">
+	<option value="01">Jan</option>
+	<option value="02">Feb</option>
+	<option value="03">Mar</option>
+	<option value="04">Apr</option>
+	<option value="05">May</option>
+	<option value="06">June</option>
+	<option value="07">July</option>
+	<option value="08">Aug</option>
+	<option value="09">Sep</option>
+	<option value="10">Oct</option>
+	<option value="11">Nov</option>
+	<option value="12">Dec</option>
+	</select>
+
+<label id="bkcolorMsg">Pick a background Color</label>
+	<input type="radio" name="bkcolor" value="red" class="bkcolor"><b style="color: white; background-color:red">Red</b><br>
+	<input type="radio" name="bkcolor" value="blue" class="bkcolor"><b style="color: white; background-color: blue">Blue</b><br>
+	<input type="radio" name="bkcolor" value="green" class="bkcolor"><b style="color: white; background-color: green">Green</b><br>
+	<input type="radio" name="bkcolor" value="black" class="bkcolor"><b style="color: white; background-color: black">Black</b><br>
+	<input type="radio" name="bkcolor" value="purple" class="bkcolor"><b style="color: white; background-color: purple">Purple</b><br>
+	<input type="radio" name="bkcolor" value="darkcyan" class="bkcolor"><b style="color: white; background-color: darkcyan">Dark Cyan</b><br>
+	<input type="radio" name="bkcolor" value="darkslategray" class="bkcolor"><b style="color: white; background-color: darkslategray">Slate Gray</b><br>
+	<input type="radio" name="bkcolor" value="indigo" class="bkcolor"><b style="color: white; background-color: indigo">Indigo</b><br>
+
+
+
+<input type="submit" name="senddata" id="senddata" value="send" >
+
+
+
+
+	<input type="reset" >
+
+</form>
+
+
+
+</body>
+
+</html>
+
