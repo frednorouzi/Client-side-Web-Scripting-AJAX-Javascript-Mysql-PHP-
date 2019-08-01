@@ -1,0 +1,24 @@
+drop table pets;
+drop table owners;
+drop table ref;
+create table pets(petid int not null auto_increment, primary key(petid), petname varchar(50), species varchar(50), description text);
+create table owners(ownerid int not null auto_increment, primary key(ownerid), fname varchar(80), lname varchar(80), city varchar(100));
+create table ref(refid int not null auto_increment, primary key(refid), petid int, ownerid int);
+insert into pets values('1', "Snoopy", "Dog", "Beagle");
+insert into pets values('2', "Rudoloph", "Reindeer", "Red Nose");
+insert into pets values('3', "Barky", "Dog", "Barks a lot");
+insert into pets values('4', "Garfield", "Cat", "Orange");
+insert into pets values('5', "Tweety", "Bird", "Yellow Canary");
+insert into owners values('100', "Charlie", "Brown", "New York");
+insert into owners values('101', "Mary", "Smith", "Sacramento");
+insert into owners values('102', "Bob", "Green", "Citrus Heights");
+insert into owners values('103', "Anne", "Lewis", "Citrus Heights");
+insert into ref values('', "1", "100");
+insert into ref values('', "2", "101");
+insert into ref values('', "3", "102");
+insert into ref values('', "4", "103");
+insert into ref values('', "5", "103");
+
+
+
+

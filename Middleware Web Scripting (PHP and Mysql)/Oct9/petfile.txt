@@ -1,0 +1,9 @@
+1	Fluffy	Cat	White with brown spots
+2	Snoopy	Dog	Black and white beagle
+3	Tweety	Bird	Yellow canary
+4	Garfield	Cat	Orange with stripes
+5	Dumbo	Elephant	Large ears
+6	Lassie	Dog	Collie
+7	Mr. Ed	Horse	Talks
+8	Rudolfph	Reindeer	Has red nose
+9	Barky	Dog	Barks a lot
